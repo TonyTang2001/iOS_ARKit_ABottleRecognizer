@@ -35,6 +35,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
+        
+        //Object Detection
+        configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "ABottleObject", bundle: Bundle.main)!
 
         // Run the view's session
         sceneView.session.run(configuration)
@@ -48,6 +51,31 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
 
     // MARK: - ARSCNViewDelegate
+    
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        
+        let node = SCNNode()
+        
+        if let objectAnchor = anchor as? ARObjectAnchor{
+            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
+            
+            plane.cornerRadius = plane.width / 6
+            
+            let spriteKitScene = SKScene(fileNamed: "Productinfo")
+            
+            plane.firstMaterial?.diffuse.contents = spriteKitScene
+            plane.firstMaterial?.isDoubleSided = true
+            plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
+            
+            let planeNode = SCNNode(geometry: plane)
+            planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.3, objectAnchor.referenceObject.center.z)
+            
+            node.addChildNode(planeNode)
+            
+        }
+        
+        return node
+    }
     
 /*
     // Override to create and configure nodes for anchors added to the view's session.

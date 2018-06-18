@@ -13,6 +13,7 @@
 		EAAEE79B20D7CCC700BF7F84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE79920D7CCC700BF7F84 /* Main.storyboard */; };
 		EAAEE79D20D7CCC800BF7F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE79C20D7CCC800BF7F84 /* Assets.xcassets */; };
 		EAAEE7A020D7CCC800BF7F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE79E20D7CCC800BF7F84 /* LaunchScreen.storyboard */; };
+		EAAEE7AA20D7CD3D00BF7F84 /* Productinfo.sks in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE7A920D7CD3D00BF7F84 /* Productinfo.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EAAEE79C20D7CCC800BF7F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAAEE79F20D7CCC800BF7F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAAEE7A120D7CCC800BF7F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAEE7A920D7CD3D00BF7F84 /* Productinfo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Productinfo.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EAAEE79320D7CCC700BF7F84 /* AppDelegate.swift */,
 				EAAEE79520D7CCC700BF7F84 /* art.scnassets */,
 				EAAEE79720D7CCC700BF7F84 /* ViewController.swift */,
+				EAAEE7A920D7CD3D00BF7F84 /* Productinfo.sks */,
 				EAAEE79920D7CCC700BF7F84 /* Main.storyboard */,
 				EAAEE79C20D7CCC800BF7F84 /* Assets.xcassets */,
 				EAAEE79E20D7CCC800BF7F84 /* LaunchScreen.storyboard */,
@@ -127,6 +130,7 @@
 			files = (
 				EAAEE79620D7CCC700BF7F84 /* art.scnassets in Resources */,
 				EAAEE7A020D7CCC800BF7F84 /* LaunchScreen.storyboard in Resources */,
+				EAAEE7AA20D7CD3D00BF7F84 /* Productinfo.sks in Resources */,
 				EAAEE79D20D7CCC800BF7F84 /* Assets.xcassets in Resources */,
 				EAAEE79B20D7CCC700BF7F84 /* Main.storyboard in Resources */,
 			);
