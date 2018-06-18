@@ -15,6 +15,7 @@
 		EAAEE7A020D7CCC800BF7F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE79E20D7CCC800BF7F84 /* LaunchScreen.storyboard */; };
 		EAAEE7AA20D7CD3D00BF7F84 /* Productinfo_AB.sks in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE7A920D7CD3D00BF7F84 /* Productinfo_AB.sks */; };
 		EAAEE7AE20D7EE2D00BF7F84 /* Productinfo_Cal.sks in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE7AD20D7EE2D00BF7F84 /* Productinfo_Cal.sks */; };
+		EAB2C11F20D7F2130042521A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2C11E20D7F2130042521A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EAAEE7A120D7CCC800BF7F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAAEE7A920D7CD3D00BF7F84 /* Productinfo_AB.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Productinfo_AB.sks; sourceTree = "<group>"; };
 		EAAEE7AD20D7EE2D00BF7F84 /* Productinfo_Cal.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Productinfo_Cal.sks; sourceTree = "<group>"; };
+		EAB2C11E20D7F2130042521A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		EAAEE78720D7CCC700BF7F84 = {
 			isa = PBXGroup;
 			children = (
+				EAB2C11E20D7F2130042521A /* Default-568h@2x.png */,
 				EAAEE79220D7CCC700BF7F84 /* TI-84PlusRecognizer */,
 				EAAEE79120D7CCC700BF7F84 /* Products */,
 			);
@@ -136,6 +139,7 @@
 				EAAEE7AA20D7CD3D00BF7F84 /* Productinfo_AB.sks in Resources */,
 				EAAEE79D20D7CCC800BF7F84 /* Assets.xcassets in Resources */,
 				EAAEE7AE20D7EE2D00BF7F84 /* Productinfo_Cal.sks in Resources */,
+				EAB2C11F20D7F2130042521A /* Default-568h@2x.png in Resources */,
 				EAAEE79B20D7CCC700BF7F84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V65NNG452;
-				INFOPLIST_FILE = ABottleRecognizer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TI-84PlusRecognizer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V65NNG452;
-				INFOPLIST_FILE = ABottleRecognizer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TI-84PlusRecognizer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

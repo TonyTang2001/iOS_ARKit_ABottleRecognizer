@@ -57,18 +57,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let node = SCNNode()
         
         if let objectAnchor = anchor as? ARObjectAnchor{
-            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.9), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.3))
+            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x), height: CGFloat(objectAnchor.referenceObject.extent.y))
             
 //            plane.cornerRadius = plane.width / 10
             
-            let spriteKitScene = SKScene(fileNamed: "Productinfo")
+            let spriteKitScene = SKScene(fileNamed: "Productinfo_Cal")
             
             plane.firstMaterial?.diffuse.contents = spriteKitScene
             plane.firstMaterial?.isDoubleSided = true
             plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
             
             let planeNode = SCNNode(geometry: plane)
-            planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.23, objectAnchor.referenceObject.center.z)
+            planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.1, objectAnchor.referenceObject.center.z)
             
             node.addChildNode(planeNode)
             
