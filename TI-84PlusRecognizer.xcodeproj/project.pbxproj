@@ -13,11 +13,12 @@
 		EAAEE79B20D7CCC700BF7F84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE79920D7CCC700BF7F84 /* Main.storyboard */; };
 		EAAEE79D20D7CCC800BF7F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE79C20D7CCC800BF7F84 /* Assets.xcassets */; };
 		EAAEE7A020D7CCC800BF7F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE79E20D7CCC800BF7F84 /* LaunchScreen.storyboard */; };
-		EAAEE7AA20D7CD3D00BF7F84 /* Productinfo.sks in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE7A920D7CD3D00BF7F84 /* Productinfo.sks */; };
+		EAAEE7AA20D7CD3D00BF7F84 /* Productinfo_AB.sks in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE7A920D7CD3D00BF7F84 /* Productinfo_AB.sks */; };
+		EAAEE7AE20D7EE2D00BF7F84 /* Productinfo_Cal.sks in Resources */ = {isa = PBXBuildFile; fileRef = EAAEE7AD20D7EE2D00BF7F84 /* Productinfo_Cal.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EAAEE79020D7CCC700BF7F84 /* ABottleRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABottleRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAEE79020D7CCC700BF7F84 /* TI-84PlusRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TI-84PlusRecognizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAEE79320D7CCC700BF7F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAAEE79520D7CCC700BF7F84 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		EAAEE79720D7CCC700BF7F84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +26,8 @@
 		EAAEE79C20D7CCC800BF7F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAAEE79F20D7CCC800BF7F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAAEE7A120D7CCC800BF7F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAAEE7A920D7CD3D00BF7F84 /* Productinfo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Productinfo.sks; sourceTree = "<group>"; };
+		EAAEE7A920D7CD3D00BF7F84 /* Productinfo_AB.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Productinfo_AB.sks; sourceTree = "<group>"; };
+		EAAEE7AD20D7EE2D00BF7F84 /* Productinfo_Cal.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Productinfo_Cal.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +44,7 @@
 		EAAEE78720D7CCC700BF7F84 = {
 			isa = PBXGroup;
 			children = (
-				EAAEE79220D7CCC700BF7F84 /* ABottleRecognizer */,
+				EAAEE79220D7CCC700BF7F84 /* TI-84PlusRecognizer */,
 				EAAEE79120D7CCC700BF7F84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,32 +52,33 @@
 		EAAEE79120D7CCC700BF7F84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EAAEE79020D7CCC700BF7F84 /* ABottleRecognizer.app */,
+				EAAEE79020D7CCC700BF7F84 /* TI-84PlusRecognizer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EAAEE79220D7CCC700BF7F84 /* ABottleRecognizer */ = {
+		EAAEE79220D7CCC700BF7F84 /* TI-84PlusRecognizer */ = {
 			isa = PBXGroup;
 			children = (
 				EAAEE79320D7CCC700BF7F84 /* AppDelegate.swift */,
 				EAAEE79520D7CCC700BF7F84 /* art.scnassets */,
 				EAAEE79720D7CCC700BF7F84 /* ViewController.swift */,
-				EAAEE7A920D7CD3D00BF7F84 /* Productinfo.sks */,
+				EAAEE7A920D7CD3D00BF7F84 /* Productinfo_AB.sks */,
+				EAAEE7AD20D7EE2D00BF7F84 /* Productinfo_Cal.sks */,
 				EAAEE79920D7CCC700BF7F84 /* Main.storyboard */,
 				EAAEE79C20D7CCC800BF7F84 /* Assets.xcassets */,
 				EAAEE79E20D7CCC800BF7F84 /* LaunchScreen.storyboard */,
 				EAAEE7A120D7CCC800BF7F84 /* Info.plist */,
 			);
-			path = ABottleRecognizer;
+			path = "TI-84PlusRecognizer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EAAEE78F20D7CCC700BF7F84 /* ABottleRecognizer */ = {
+		EAAEE78F20D7CCC700BF7F84 /* TI-84PlusRecognizer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EAAEE7A420D7CCC800BF7F84 /* Build configuration list for PBXNativeTarget "ABottleRecognizer" */;
+			buildConfigurationList = EAAEE7A420D7CCC800BF7F84 /* Build configuration list for PBXNativeTarget "TI-84PlusRecognizer" */;
 			buildPhases = (
 				EAAEE78C20D7CCC700BF7F84 /* Sources */,
 				EAAEE78D20D7CCC700BF7F84 /* Frameworks */,
@@ -85,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = ABottleRecognizer;
+			name = "TI-84PlusRecognizer";
 			productName = ABottleRecognizer;
-			productReference = EAAEE79020D7CCC700BF7F84 /* ABottleRecognizer.app */;
+			productReference = EAAEE79020D7CCC700BF7F84 /* TI-84PlusRecognizer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EAAEE78B20D7CCC700BF7F84 /* Build configuration list for PBXProject "ABottleRecognizer" */;
+			buildConfigurationList = EAAEE78B20D7CCC700BF7F84 /* Build configuration list for PBXProject "TI-84PlusRecognizer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EAAEE78F20D7CCC700BF7F84 /* ABottleRecognizer */,
+				EAAEE78F20D7CCC700BF7F84 /* TI-84PlusRecognizer */,
 			);
 		};
 /* End PBXProject section */
@@ -130,8 +133,9 @@
 			files = (
 				EAAEE79620D7CCC700BF7F84 /* art.scnassets in Resources */,
 				EAAEE7A020D7CCC800BF7F84 /* LaunchScreen.storyboard in Resources */,
-				EAAEE7AA20D7CD3D00BF7F84 /* Productinfo.sks in Resources */,
+				EAAEE7AA20D7CD3D00BF7F84 /* Productinfo_AB.sks in Resources */,
 				EAAEE79D20D7CCC800BF7F84 /* Assets.xcassets in Resources */,
+				EAAEE7AE20D7EE2D00BF7F84 /* Productinfo_Cal.sks in Resources */,
 				EAAEE79B20D7CCC700BF7F84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EAAEE78B20D7CCC700BF7F84 /* Build configuration list for PBXProject "ABottleRecognizer" */ = {
+		EAAEE78B20D7CCC700BF7F84 /* Build configuration list for PBXProject "TI-84PlusRecognizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EAAEE7A220D7CCC800BF7F84 /* Debug */,
@@ -332,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAAEE7A420D7CCC800BF7F84 /* Build configuration list for PBXNativeTarget "ABottleRecognizer" */ = {
+		EAAEE7A420D7CCC800BF7F84 /* Build configuration list for PBXNativeTarget "TI-84PlusRecognizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EAAEE7A520D7CCC800BF7F84 /* Debug */,

@@ -24,7 +24,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene(named: "art.scnassets/GameScene.scn")!
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -37,7 +37,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let configuration = ARWorldTrackingConfiguration()
         
         //Object Detection
-        configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "ABottleObject", bundle: Bundle.main)!
+        configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "CalObject", bundle: Bundle.main)!
 
         // Run the view's session
         sceneView.session.run(configuration)
@@ -57,9 +57,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let node = SCNNode()
         
         if let objectAnchor = anchor as? ARObjectAnchor{
-            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
+            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.9), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.3))
             
-            plane.cornerRadius = plane.width / 6
+//            plane.cornerRadius = plane.width / 10
             
             let spriteKitScene = SKScene(fileNamed: "Productinfo")
             
@@ -68,7 +68,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
             
             let planeNode = SCNNode(geometry: plane)
-            planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.3, objectAnchor.referenceObject.center.z)
+            planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.23, objectAnchor.referenceObject.center.z)
             
             node.addChildNode(planeNode)
             
@@ -76,15 +76,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         return node
     }
-    
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
-     
-        return node
-    }
-*/
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
